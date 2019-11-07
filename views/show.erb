@@ -1,0 +1,17 @@
+<h1>Hogwarts students</h1>
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>House</th>
+    <th>Age</th>
+  </tr>
+  <%for student in @students %>
+  <tr>
+    <td><%= student.first_name %></td>
+    <td><%=  student.last_name %></td>
+    <td><%= student.house_id %></td>
+    <td><%= student.age %></td>
+  </tr>
+  <%end %>
+</table>
